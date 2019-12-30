@@ -66,7 +66,7 @@ $(document).ready(function () {
 });
 
 
-// Get only hour out of DATE-TIME
+// Get DATE-TIME - return Hour
 function onlyHour(dateTime) {
 
   var date = new Date(dateTime)
@@ -101,49 +101,52 @@ $(".myBtn").click(function () {
     }
 
     $.post(url, data, function (res, status) {
-      onlyHour(res.return_time)
+      if (status == 'success') {
+        onlyHour(res.return_time)
 
-      var thanksDiv = $('<div></div>').attr('class', 'col-12 col-md-4 px-4 px-md-0 pb-5 pb-md-0')
-      var thanksP = '<p><b>Thank you for using The Jungle<sup>TM</sup> FastRider ticket system - your access code is now ready!</b></p>'
-      var thanksImg = $('<img>').attr({
-        'class': 'imgLg',
-        'src': 'img/ico-04.svg',
-        'alt': 'Navigate'
-      })
-      $(thanksDiv).prepend(thanksImg, thanksP)
+        var thanksDiv = $('<div></div>').attr('class', 'col-12 col-md-4 px-4 px-md-0 pb-5 pb-md-0')
+        var thanksP = '<p><b>Thank you for using The Jungle<sup>TM</sup> FastRider ticket system - your access code is now ready!</b></p>'
+        var thanksImg = $('<img>').attr({
+          'class': 'imgLg',
+          'src': 'img/ico-04.svg',
+          'alt': 'Navigate'
+        })
+        $(thanksDiv).prepend(thanksImg, thanksP)
 
-      var div__1 = $('<div></div>').attr('class', 'col-12 col-md-6')
-      var div__2 = $('<div></div>').attr('class', 'top').css('background-color', res.ride.zone.color)
-      var div__3 = $('<div></div>').attr('class', 'box')
-      var div__4 = $('<div></div>')
-      var p__4_1 = $('<p></p>').attr('class', 'float-left p-1 pl-2 white b').text(res.ride.name)
-      var p__4_2 = $('<p></p>').attr('class', 'float-right p-1 pr-2 b').text(res.ride.zone.name)
-      var div__5 = $('<div></div>').attr('class', 'pt-5')
-      var p__5_1 = $('<p></p>').attr('class', 'mb-0 b').text('Return At')
-      var h3__5_2 = $('<h3></h3>').text(time)
-      var div__6 = $('<div></div>')
-      var p__6_1 = $('<p></p>').attr('class', 'mb-0 b').text('Use Access Code')
-      var h3__6_2 = $('<h3></h3>').text(res.access_code)
+        var div__1 = $('<div></div>').attr('class', 'col-12 col-md-6')
+        var div__2 = $('<div></div>').attr('class', 'top').css('background-color', res.ride.zone.color)
+        var div__3 = $('<div></div>').attr('class', 'box')
+        var div__4 = $('<div></div>')
+        var p__4_1 = $('<p></p>').attr('class', 'float-left p-1 pl-2 white b').text(res.ride.name)
+        var p__4_2 = $('<p></p>').attr('class', 'float-right p-1 pr-2 b').text(res.ride.zone.name)
+        var div__5 = $('<div></div>').attr('class', 'pt-5')
+        var p__5_1 = $('<p></p>').attr('class', 'mb-0 b').text('Return At')
+        var h3__5_2 = $('<h3></h3>').text(time)
+        var div__6 = $('<div></div>')
+        var p__6_1 = $('<p></p>').attr('class', 'mb-0 b').text('Use Access Code')
+        var h3__6_2 = $('<h3></h3>').text(res.access_code)
 
-      $(div__6).prepend(p__6_1, h3__6_2)
-      $(div__5).prepend(p__5_1, h3__5_2)
-      $(div__4).prepend(p__4_1, p__4_2)
-      $(div__3).prepend(div__4, div__5, div__6)
-      $(div__1).prepend(div__2, div__3)
+        $(div__6).prepend(p__6_1, h3__6_2)
+        $(div__5).prepend(p__5_1, h3__5_2)
+        $(div__4).prepend(p__4_1, p__4_2)
+        $(div__3).prepend(div__4, div__5, div__6)
+        $(div__1).prepend(div__2, div__3)
 
-      // Fading effect
-      $('#icoRow').fadeOut()
-      $('#boxRow').fadeOut()
-      $('#inputRow').fadeOut()
-      $('footer').fadeOut()
+        // Fading effect
+        $('#icoRow').fadeOut()
+        $('#boxRow').fadeOut()
+        $('#inputRow').fadeOut()
+        $('footer').fadeOut()
 
-      // render POST response
-      $('#icoRow').html(thanksDiv)
-      $('#icoRow').fadeIn()
-      $('#boxRow').html(div__1)
-      $('#boxRow').fadeIn()
+        // render POST response
+        $('#icoRow').html(thanksDiv)
+        $('#icoRow').fadeIn()
+        $('#boxRow').html(div__1)
+        $('#boxRow').fadeIn()
 
-
+      } else {
+        errorMessage('Eroor: Check Internet connection')
+      }
     });
   }
 });
