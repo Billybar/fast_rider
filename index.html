@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- My Css -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Fast Rider Project</title>
+</head>
+
+<body>
+
+  <div class="container text-center px-0 px-md-5">
+    <div class="container text-center px-0 px-md-5">
+      <div class="container text-center px-0 px-md-5">
+        <h1 class="text-center pb-4 pb-md-0 pt-5 b">The Jungle<sup class="sup">TM</sup> FastRider Service</h1>
+        <div class="container text-center pb-5 p-md-5">
+          <div id="icoRow" class="row d-flex flex-row justify-content-center pb-0 pb-md-5">
+            <div class="col-12 col-md-4 px-4 pb-4 pb-md-0">
+              <img class="imgLg" width="55px" src="img/ico-01.svg" alt="Park Ticket">
+              <p><b>Enter your park ticket #PIN number, then select the desierd ride while noting the stated return time
+                </b></p>
+            </div>
+            <div class="col-12 col-md-4 px-5 pb-4 pb-md-0">
+              <img class="imgLg" width="55px" src="img/ico-02.svg" alt="Navigate">
+              <p><b>Press 'submit' to confirm and retrieve your access code</b></p>
+            </div>
+            <div class="col-12 col-md-4 px-4 pb-4 pb-md-0">
+              <img class="imgLg" width="55px" src="img/ico-03.svg" alt="Clock">
+              <p><b>When the time comes, use the special FastRider line to cut out a considerable wait time</b></p>
+            </div>
+          </div>
+
+          <div id="inputRow" class="row pb-3 px-1">
+
+            <div class="alert text-center rounded" id="divAlert" role="alert">
+              <p class="mb-0 text-white" id="errorPara"></p>
+            </div>
+
+            <div class="col-12 col-md-9 pr-md-0 px-1">
+              <input class="rounded-0 p-3 btn-block h-100" value="JN-8080-8080-" type="text" placeholder=""
+                name="inputName" id="myInput">
+            </div>
+            <div class="col-12 col-md-3 px-0 pr-md-1">
+              <button type="button"
+                class="myBtn btn-lg btn-block p-4 rounded-0 border-0 d-none d-md-inline text-white">SUBMIT</button>
+            </div>
+          </div>
+
+          <div id="boxRow" class="row pb-5 px-1 d-flex flex-row justify-content-center">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-md-none">
+    <div>
+      <button type="button" class="myBtn btn-lg btn-block p-4 rounded-0 border-0 text-white">SUBMIT</button>
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- My Script -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

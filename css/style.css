@@ -1,0 +1,95 @@
+body {
+  background-color: #232323;
+  color: aliceblue;
+}
+
+h1 {
+  font-size: 1.5em;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+}
+
+h3 {
+  color: aliceblue;
+}
+
+p {
+  color: #656565;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.3px;
+}
+
+input {
+  font-size: 1.5rem;
+}
+
+.box {
+  background-color: #373737;
+  border: none !important;
+  outline: none !important;
+  width: 100%;
+  height: 100%;
+}
+
+.ride {
+  min-height: 98px;
+}
+
+.white {
+  color: aliceblue;
+}
+
+.sup {
+  font-size: 0.8rem;
+}
+
+.myWid {
+  width: 24px;
+}
+
+.top {
+  width: 100%;
+  height: 5px;
+}
+
+.b {
+  font-weight: 700;
+}
+
+.imgLg {
+  padding: 5px;
+  background-color: #6565651c;
+  border-radius: 180px;
+  margin: 10px;
+}
+
+
+.myBtn {
+  background-color: #4c4c4b;
+}
+
+.alert {
+  background-color: rgba(24, 23, 22, 0.938);
+  width: 100vw;
+  height: 20vh;
+  display: none;
+  margin: 0;
+  position: relative;
+  z-index: 99;
+}
+
+#errorPara {
+  font-size: 1.3rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
