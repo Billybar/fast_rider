@@ -85,7 +85,7 @@ function validation() {
 
   currentHour = new Date()
   currentHour = onlyHour(currentHour)
-  if (currentHour < '09:00' || currentHour > '21:00') {
+  if (currentHour < '09:00' || currentHour > '19:00') {
     errorMessage('System availabe only  9:00 - 19:00')
   } else if (ride_id == 0) {
     errorMessage('Please Choose a Ride')
@@ -108,7 +108,7 @@ function validation2(pin) {
     localStorage.removeItem(pin)
   }
   if (localStorage.getItem(pin) && currentHour <= localStorage.getItem(pin)) {
-    errorMessage('Can order only one Ticket at a time')
+    errorMessage('Can hold only one Ticket at a time')
     return false
   } else {
     return true
