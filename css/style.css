@@ -140,6 +140,14 @@ footer {
 }
 
 
+@media screen and (max-width: 1200px) {
+
+  .mainCon {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
 
 @media screen and (max-width: 444px) {
   h1 {
