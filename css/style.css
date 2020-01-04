@@ -145,8 +145,6 @@ footer {
 @media screen and (max-width: 444px) {
   h1 {
     font-size: 1.3rem;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
   }
 
   .mainCon {
@@ -163,7 +161,6 @@ footer {
   sup {
     vertical-align: 4px;
     font-weight: 700;
-    font-size: 0.5rem;
     letter-spacing: 0.5px;
   }
 
@@ -191,19 +188,13 @@ footer {
 @media screen and (max-width: 400px) {
   h1 {
     font-size: 1.2rem;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
   }
 
   sup {
     vertical-align: 3px;
-    font-weight: 700;
-    font-size: 0.5rem;
-    letter-spacing: 0.5px;
   }
 
   h3 {
-    font-size: 1.7rem;
     padding-right: 0px;
     padding-left: 0px;
   }
@@ -211,8 +202,6 @@ footer {
 
   p {
     font-size: 0.9rem;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 
   .p_1 {
@@ -225,21 +214,15 @@ footer {
 @media screen and (max-width: 361px) {
   h1 {
     font-size: 1rem;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 100;
   }
 
   sup {
     vertical-align: 1px;
     font-weight: 600;
-    font-size: 0.5rem;
-    letter-spacing: 0.5px;
   }
 
   h3 {
     font-size: 1.5rem;
-    padding-right: 0px;
-    padding-left: 0px;
   }
 
   .ride {
