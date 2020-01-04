@@ -3,14 +3,25 @@ body {
   color: aliceblue;
 }
 
+.mainCon {
+  padding-left: 144px;
+  padding-right: 144px;
+}
+
 h1 {
-  font-size: 1.5em;
+  font-size: 2rem;
   font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
+  font-weight: 100;
+}
+
+.myPad {
+  padding-left: 68px;
+  padding-right: 68px;
 }
 
 h3 {
   color: aliceblue;
+
 }
 
 p {
@@ -19,8 +30,21 @@ p {
   letter-spacing: 0.3px;
 }
 
+.p_1 {
+  font-size: 1.1rem;
+}
+
+
 input {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+::placeholder {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: black;
+  opacity: 1;
 }
 
 .box {
@@ -31,16 +55,26 @@ input {
   height: 100%;
 }
 
+.div_1 {
+  padding-top: 12px;
+}
+
 .ride {
   min-height: 98px;
+  font-weight: 600;
+  margin-bottom: 0px;
 }
 
 .white {
   color: aliceblue;
 }
 
-.sup {
-  font-size: 0.8rem;
+
+sup {
+  vertical-align: 7px;
+  font-weight: 700;
+  font-size: 0.65rem;
+  letter-spacing: 0.1px;
 }
 
 .myWid {
@@ -57,7 +91,16 @@ input {
 }
 
 .imgLg {
+  width: 52px;
   padding: 5px;
+  background-color: #6565651c;
+  border-radius: 180px;
+  margin: 10px;
+}
+
+.thnIM {
+  width: 60px;
+  padding: 1px;
   background-color: #6565651c;
   border-radius: 180px;
   margin: 10px;
@@ -66,6 +109,9 @@ input {
 
 .myBtn {
   background-color: #4c4c4b;
+  font-weight: 600;
+  font-size: 1.3rem;
+
 }
 
 .alert {
@@ -75,7 +121,7 @@ input {
   display: none;
   margin: 0;
   position: relative;
-  z-index: 99;
+  z-index: 2;
 }
 
 #errorPara {
@@ -92,4 +138,123 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+
+
+@media screen and (max-width: 444px) {
+  h1 {
+    font-size: 1.3rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+
+  .mainCon {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .myPad {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+
+  sup {
+    vertical-align: 4px;
+    font-weight: 700;
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    padding-right: 14px;
+    padding-left: 14px;
+  }
+
+
+  p {
+    font-size: 1rem;
+    padding-right: 10px;
+    padding-left: 10px;
+    letter-spacing: 0.4px;
+  }
+
+  .p_1 {
+    font-size: 1.05rem;
+  }
+}
+
+
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.2rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+
+  sup {
+    vertical-align: 3px;
+    font-weight: 700;
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+
+  p {
+    font-size: 0.9rem;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .p_1 {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+@media screen and (max-width: 361px) {
+  h1 {
+    font-size: 1rem;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+  }
+
+  sup {
+    vertical-align: 1px;
+    font-weight: 600;
+    font-size: 0.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
+  .ride {
+    min-height: 90px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 0.75rem;
+    padding-right: 0px;
+    padding-left: 0px;
+    letter-spacing: 0px;
+  }
+
+  .p_1 {
+    font-size: 0.8rem;
+  }
 }
